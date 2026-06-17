@@ -41,7 +41,7 @@ nav a:hover{
 }
 
 .logo img{
-    width: 180px;
+    width: 300px;
     height: auto;
     transition: 0.3s;
 }
@@ -52,33 +52,31 @@ nav a:hover{
 
 .hero{
     background-color: #F4E6EA;
-    min-height: 90vh;
+    min-height: 100vh;
 }
 
-@media(max-width: 900px){
 
-    nav{
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .left-menu,
-    .right-menu{
-        gap: 20px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .logo img{
-        width: 140px;
-    }
-}   
-
-#section-2{
+#section-2 {
     background: #DFA2B0;
-    padding: 70px 20px;
+    min-height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: Arial, sans-serif;
+}
+
+#section2, h2{
+    font-family: Arial, sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    padding-bottom: 30px;
+}
+
+#section2, p{
+    font-family: Arial, sans-serif;
+    letter-spacing: 2px;;
+    transition: 0.3s;
 }
 
 .title-box{
@@ -119,4 +117,23 @@ nav a:hover{
 
 .services-box hr{
     display: none;
+}
+
+footer{
+    background: #F4E6EA;
+}
+
+.footer-links ul{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.footer-links ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
 }
