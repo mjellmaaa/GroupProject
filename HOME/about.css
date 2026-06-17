@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background-color: #f8dce0;
+  color: #5a3e3e;
+}
+
+/* Layout */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 1200px;
+  margin: 80px auto;
+}
+
+nav{
+    width: 100%;
+    background-color: #F4E6EA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    border-bottom: 1px solid #e4c8d0;
+}
+
+.left-menu,.right-menu{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: #111111;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #DFA2B0;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 300px;
+    height: auto;
+    transition: 0.3s;
+}
+
+.logo img:hover{
+    transform: scale(1.05);
+}
+
+.hero{
+    background-color: #F4E6EA;
+    min-height: 100vh;
+}
+
+/* Left side image */
+.about-image {
+  flex: 1;
+}
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right side text */
+.about-text {
+  flex: 1;
+  padding: 60px;
+  text-align: left;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.about-text h1 {
+  font-size: 48px;
+  color: #b76e79;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.divider {
+  font-size: 24px;
+  color: #b76e79;
+  margin-bottom: 30px;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.signature {
+  font-family: 'Dancing Script', cursive;
+  font-size: 22px;
+  color: #7a4b4b;
+  margin-top: 40px;
+}
