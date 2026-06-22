@@ -1,54 +1,120 @@
-body{
-    background-color: #f8eef1;
-}
-
-.h1{
-    color: #b76e79;
-    text-align: center;
-}
-
-.p{
-    color: #b76e79;
-    text-align: center;
-}
-
 body {
-  margin: 0;
-  font-family: 'Playfair Display', serif;
+    background-color: #f8eef1;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
 }
 
+.h1 {
+    color: #b76e79;
+    text-align: center;  
+    margin: 0;
+    font-size: 36px;    
+}
 
+.p {
+    text-align: center;
+    color: #b76e79;
+    margin: 10px 0 0 0;
+    font-size: 18px;
+}
+
+/* Header with nav background */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* Navbar with background image */
 .navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: #b76e79; 
-  font-size: 20px;
-  margin: 0 15px;
-  letter-spacing: 1px;
-  transition: color 0.3s ease;
-}
-
-.navbar a:hover {
-  color: #DFA2B0;
-}
-
-.logo{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 25px;
+    padding: 15px 0;
+    background: url("img/nav bar bg.png") no-repeat center center; /* your uploaded photo */
+    background-size: cover;
+    position: relative;
 }
 
-.logo img{
-    width: 300px;
+/* Blur + opacity overlay */
+.navbar::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.6); /* soft white overlay */
+    backdrop-filter: blur(6px);           /* blur effect */
+    z-index: 0;
+}
+
+/* Links on top of overlay */
+.navbar a {
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    color: #b76e79; 
+    font-size: 20px;
+    margin: 0 15px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #DFA2B0;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.logo img {
+    width: 120px;  
     height: auto;
     transition: 0.3s;
 }
 
-.logo img:hover{
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+/* Section styling */
+#section_1 {
+    display: flex;
+    flex-direction: row;       
+    justify-content: center;   
+    align-items: flex-start;   
+    margin-top: 40px;
+    gap: 60px;                 
+}
+
+/* Each category block */
+.category {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    text-align: center;
+}
+
+/* Headings */
+.category h3 {
+    color: #b76e79;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+/* Images */
+.category img {
+    width: 150px;              
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.category img:hover {
     transform: scale(1.05);
 }
