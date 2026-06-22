@@ -56,8 +56,14 @@ nav a:hover{
 }
 
 
-#section-2 {
-    background: #DFA2B0;
+#section2 {
+    background-image: linear-gradient(
+        rgba(223, 162, 176, 0.7),
+        rgba(223, 162, 176, 0.7) 
+    ), url('img/offer.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 55vh;
     display: flex;
     justify-content: center;
@@ -65,18 +71,20 @@ nav a:hover{
     font-family: Arial, sans-serif;
 }
 
-#section2, h2{
+#section2 h2{
     font-family: Arial, sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
     transition: 0.3s;
     padding-bottom: 30px;
+    color: white;
 }
 
-#section2, p{
+#section2 p{
     font-family: Arial, sans-serif;
     letter-spacing: 2px;;
     transition: 0.3s;
+    color: white;
 }
 
 .title-box{
