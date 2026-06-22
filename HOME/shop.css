@@ -1,0 +1,54 @@
+body{
+    background-color: #f8eef1;
+}
+
+.h1{
+    color: #b76e79;
+    text-align: center;
+}
+
+.p{
+    color: #b76e79;
+    text-align: center;
+}
+
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #b76e79; 
+  font-size: 20px;
+  margin: 0 15px;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #DFA2B0;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 300px;
+    height: auto;
+    transition: 0.3s;
+}
+
+.logo img:hover{
+    transform: scale(1.05);
+}
