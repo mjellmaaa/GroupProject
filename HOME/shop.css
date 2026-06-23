@@ -118,3 +118,128 @@ body {
 .category img:hover {
     transform: scale(1.05);
 }
+#section_2 {
+  text-align: center;   /* centers the image */
+  padding: 20px;        /* adds breathing room */
+}
+#section_2 img {
+  width: 250px;         /* bigger size */
+  height: auto;         /* keeps proportions */
+  opacity: 0.7;         /* soft transparency */
+  border-radius: 10px;  /* optional rounded corners */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+#section_2 img:hover {
+  opacity: 1;           /* full visibility on hover */
+  transform: scale(1.05); /* gentle zoom effect */
+}
+
+.footer {
+    background: linear-gradient(
+        to right,
+        #f7dfe6,
+        #f4e6ea,
+        #f7dfe6
+    );
+    margin-top: 80px;
+    padding-top: 50px;
+    font-family: "Times New Roman", serif;
+}
+
+.footer-container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-column h3 {
+    color: #c98a9b;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.line {
+    width: 70px;
+    height: 1px;
+    background: #d7a1af;
+    margin-bottom: 20px;
+}
+
+.footer-column p {
+    color: #b67a89;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #b67a89;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #dfa2b0;
+}
+
+.newsletter {
+    display: flex;
+    margin-top: 15px;
+}
+
+.newsletter input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #d7a1af;
+    outline: none;
+    background: white;
+    font-family: serif;
+}
+
+.newsletter button {
+    width: 50px;
+    border: 1px solid #d7a1af;
+    background: #f4d3db;
+    color: #c98a9b;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #c98a9b;
+    font-size: 18px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 40px;
+    border-top: 1px solid #e4c1cb;
+    color: #c98a9b;
+    font-size: 16px;
+}
