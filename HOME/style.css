@@ -87,43 +87,62 @@ nav a:hover{
     color: white;
 }
 
-.title-box{
+#section3 {
+    font-family: Arial, sans-serif;
+    background-color: #DFA2B0; /* main section background */
+    padding-top: 60px; 
+    padding-bottom: 60px;
+}
+
+.title-box {
     text-align: center;
     max-width: 600px;
     margin: auto;
 }
 
-.title-box h2{
+.title-box h2 {
     font-size: 34px;
 }
 
 
-.services-box{
+.bestsellers-title {
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.bestsellers-title h2 {
+    font-size: 38px;
+}
+
+
+.services-box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     width: 80%;
-    margin: 70px auto;
+    margin: 0 auto 70px auto; 
 }
 
-
-.service{
+.service {
     text-align: center;
     padding: 15px;
-    background: white;
+    background: #f5c6d0; 
     border-radius: 10px;
+    color: #ffffff;
 }
 
-
-.service img{
+.service img {
     width: 140px;
     height: 140px;
     object-fit: contain;
     margin-bottom: 10px;
 }
 
-
-.services-box hr{
+.services-box hr {
     display: none;
 }
 
