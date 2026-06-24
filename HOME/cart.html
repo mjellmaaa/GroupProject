@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Cart - M&R Boutique</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1> Your Fashion Finds </h1>
+  <ul id="cartItems"></ul>
+
+  <script>
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const cartList = document.getElementById("cartItems");
+
+    if (cart.length === 0) {
+      cartList.innerHTML = "<p>Cart is empty.</p>";
+    } else {
+      cart.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        cartList.appendChild(li);
+      });
+    }
+  </script>
+</body>
+</html>

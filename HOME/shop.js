@@ -8,8 +8,6 @@ const messages = [
 document.querySelector(".h1").textContent =
   messages[Math.floor(Math.random() * messages.length)];
 
-
-// Select all h3 elements
 document.querySelectorAll("h3").forEach(h3 => {
   h3.addEventListener("click", () => {
     alert("🎉 Surprise! You get 10% off today!");
@@ -17,3 +15,20 @@ document.querySelectorAll("h3").forEach(h3 => {
 });
 
 
+const categoryLinks = {
+  dressImg: "dresses.html",
+  topsImg: "tops.html",
+  skirtsImg: "skirts.html",
+  hoodiesImg: "hoodies.html",
+  formalImg: "formal.html",
+  shoesImg: "shoes.html"
+};
+
+Object.keys(categoryLinks).forEach(id => {
+  const img = document.getElementById(id);
+  if (img) {
+    img.addEventListener("click", () => {
+      window.open(categoryLinks[id], "_blank");
+    });
+  }
+});
