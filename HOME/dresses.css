@@ -26,29 +26,26 @@ body {
     margin-top: 30px;
 }
 
-/* Navbar with background image */
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 25px;
     padding: 15px 0;
-    background: url("img/nav bar bg.png") no-repeat center center; /* your uploaded photo */
+    background: url("img/nav bar bg.png") no-repeat center center;
     background-size: cover;
     position: relative;
 }
 
-/* Blur + opacity overlay */
 .navbar::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(255, 255, 255, 0.6); /* soft white overlay */
-    backdrop-filter: blur(6px);           /* blur effect */
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(6px);
     z-index: 0;
 }
 
-/* Links on top of overlay */
 .navbar a {
     position: relative;
     z-index: 1;
@@ -62,4 +59,178 @@ body {
 
 .navbar a:hover {
     color: #DFA2B0;
+}
+
+/* Dress section layout */
+#section_2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 dresses per row */
+    gap: 30px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.dress {
+    max-width: 220px;
+    text-align: center;
+}
+
+.dress img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.dress img:hover {
+    transform: scale(1.05);
+}
+
+.dress p {
+    color: #b76e79;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* Add to Cart button */
+.cart-btn {
+    margin-top: 10px;
+    padding: 8px 14px;
+    background-color: #b76e79;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.cart-btn:hover {
+    background-color: #dfa2b0;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    #section_2 {
+        grid-template-columns: repeat(2, 1fr); /* 2 per row */
+    }
+}
+
+@media (max-width: 480px) {
+    #section_2 {
+        grid-template-columns: 1fr; /* 1 per row */
+    }
+}
+
+/* Footer styling */
+.footer {
+    background: linear-gradient(
+        to right,
+        #f7dfe6,
+        #f4e6ea,
+        #f7dfe6
+    );
+    margin-top: 80px;
+    padding-top: 50px;
+    font-family: "Times New Roman", serif;
+}
+
+.footer-container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-column h3 {
+    color: #c98a9b;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.line {
+    width: 70px;
+    height: 1px;
+    background: #d7a1af;
+    margin-bottom: 20px;
+}
+
+.footer-column p {
+    color: #b67a89;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #b67a89;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #dfa2b0;
+}
+
+.newsletter {
+    display: flex;
+    margin-top: 15px;
+}
+
+.newsletter input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #d7a1af;
+    outline: none;
+    background: white;
+    font-family: serif;
+}
+
+.newsletter button {
+    width: 50px;
+    border: 1px solid #d7a1af;
+    background: #f4d3db;
+    color: #c98a9b;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #c98a9b;
+    font-size: 18px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 40px;
+    border-top: 1px solid #e4c1cb;
+    color: #c98a9b;
+    font-size: 16px;
 }
