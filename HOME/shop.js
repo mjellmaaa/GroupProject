@@ -24,11 +24,13 @@ const categoryLinks = {
   shoesImg: "shoes.html"
 };
 
-Object.keys(categoryLinks).forEach(id => {
-  const img = document.getElementById(id);
-  if (img) {
-    img.addEventListener("click", () => {
-      window.open(categoryLinks[id], "_blank");
-    });
-  }
+document.addEventListener("DOMContentLoaded", () => {
+  Object.keys(categoryLinks).forEach(id => {
+    const img = document.getElementById(id);
+    if (img) {
+      img.addEventListener("click", () => {
+        window.open(categoryLinks[id], "_blank");
+      });
+    }
+  });
 });
