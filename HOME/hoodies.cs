@@ -18,7 +18,7 @@ body {
     font-size: 18px;
 }
 
-/* Header with nav background */
+
 .header {
     display: flex;
     flex-direction: column;
@@ -61,10 +61,10 @@ body {
     color: #DFA2B0;
 }
 
-/* Dress section layout */
+
 #section_2 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 dresses per row */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 30px;
     padding: 20px;
     justify-items: center;
@@ -94,7 +94,7 @@ body {
     margin-top: 8px;
 }
 
-/* Add to Cart button */
+
 .cart-btn {
     margin-top: 10px;
     padding: 8px 14px;
@@ -111,20 +111,18 @@ body {
     background-color: #dfa2b0;
 }
 
-/* Responsive layout */
 @media (max-width: 768px) {
     #section_2 {
-        grid-template-columns: repeat(2, 1fr); /* 2 per row */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
 @media (max-width: 480px) {
     #section_2 {
-        grid-template-columns: 1fr; /* 1 per row */
+        grid-template-columns: 1fr; 
     }
 }
 
-/* Footer styling */
 .footer {
     background: linear-gradient(
         to right,

@@ -4,7 +4,6 @@ let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 let subtotal = 0;
 
-// SHFAQ PRODUKTET
 function renderCart() {
 
     cartItems.innerHTML = "";
@@ -15,8 +14,6 @@ function renderCart() {
     } else {
 
         cart.forEach((item, index) => {
-
-            // nxjerr vetëm numrin nga "Price: $45"
             let priceNumber = parseFloat(item.price.replace(/[^0-9.]/g, ""));
 
             subtotal += priceNumber;
@@ -40,7 +37,6 @@ function renderCart() {
 renderCart();
 
 
-// CHECKOUT BUTTON
 function checkout() {
 
     if (cart.length === 0) {
@@ -55,8 +51,6 @@ function checkout() {
     }
 }
 
-
-// CLEAR CART BUTTON
 function clearCart() {
     localStorage.removeItem("cart");
     cart = [];

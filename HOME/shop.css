@@ -18,7 +18,7 @@ body {
     font-size: 18px;
 }
 
-/* Header with nav background */
+
 .header {
     display: flex;
     flex-direction: column;
@@ -26,29 +26,26 @@ body {
     margin-top: 30px;
 }
 
-/* Navbar with background image */
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 25px;
     padding: 15px 0;
-    background: url("img/nav bar bg.png") no-repeat center center; /* your uploaded photo */
+    background: url("img/nav bar bg.png") no-repeat center center; 
     background-size: cover;
     position: relative;
 }
 
-/* Blur + opacity overlay */
 .navbar::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(255, 255, 255, 0.6); /* soft white overlay */
-    backdrop-filter: blur(6px);           /* blur effect */
+    background: rgba(255, 255, 255, 0.6); 
+    backdrop-filter: blur(6px);          
     z-index: 0;
 }
 
-/* Links on top of overlay */
 .navbar a {
     position: relative;
     z-index: 1;
@@ -64,7 +61,7 @@ body {
     color: #DFA2B0;
 }
 
-/* Logo */
+
 .logo {
     display: flex;
     align-items: center;
@@ -82,7 +79,7 @@ body {
     transform: scale(1.1);
 }
 
-/* Section styling */
+
 #section_1 {
     display: flex;
     flex-direction: row;       
@@ -92,7 +89,6 @@ body {
     gap: 60px;                 
 }
 
-/* Each category block */
 .category {
     display: flex;
     flex-direction: column;    
@@ -100,14 +96,14 @@ body {
     text-align: center;
 }
 
-/* Headings */
+
 .category h3 {
     color: #b76e79;
     font-size: 26px;
     margin-bottom: 15px;
 }
 
-/* Images */
+
 .category img {
     width: 150px;              
     height: auto;
@@ -119,14 +115,14 @@ body {
     transform: scale(1.05);
 }
 #section_2 {
-  text-align: center;   /* centers the image */
-  padding: 20px;        /* adds breathing room */
+  text-align: center; 
+  padding: 20px;       
 }
 #section_2 img {
-  width: 250px;         /* bigger size */
-  height: auto;         /* keeps proportions */
-  opacity: 0.7;         /* soft transparency */
-  border-radius: 10px;  /* optional rounded corners */
+  width: 250px;         
+  height: auto;         
+  opacity: 0.7;         
+  border-radius: 10px;  
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 #section_2 img:hover {

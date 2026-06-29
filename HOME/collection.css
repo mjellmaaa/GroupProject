@@ -1,4 +1,4 @@
-/* Fonts & Reset */
+
 body {
   margin: 0;
   font-family: 'Playfair Display', serif;
@@ -6,7 +6,7 @@ body {
   color: #333;
 }
 
-/* Navbar */
+
 .header {
   background-color: #222;
   padding: 15px 0;
@@ -30,7 +30,6 @@ body {
   color: #e6b8c3;
 }
 
-/* Hero Section */
 .hero {
   text-align: center;
   padding: 60px 20px;
@@ -48,10 +47,9 @@ body {
   color: #555;
 }
 
-/* Collections Grid */
 .collections {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns fixed */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 30px;
   padding: 40px;
 }
@@ -88,7 +86,6 @@ body {
   box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
 
-/* Footer */
 .footer {
   text-align: center;
   padding: 20px;

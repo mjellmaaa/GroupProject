@@ -4,8 +4,6 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
-/* HEADER */
-
 .header {
     display: flex;
     justify-content: center;
@@ -43,8 +41,6 @@ body {
 .navbar a:hover {
     color: #dfa2b0;
 }
-
-/* CART */
 
 .cart-container {
     width: 85%;
@@ -119,8 +115,6 @@ body {
     background: #dfa2b0;
 }
 
-/* SUMMARY */
-
 .cart-summary {
     margin-top: 35px;
     background: white;
@@ -172,8 +166,6 @@ body {
     background: #b76e79;
     color: white;
 }
-
-/* FOOTER */
 
 .footer {
     background: linear-gradient(to right,#f7dfe6,#f4e6ea,#f7dfe6);
